@@ -2,7 +2,7 @@ import * as React from "react";
 
 type GraphicsProps = {};
 
-const Graphics: React.FC = (props: GraphicsProps) => {
+const Graphics = (props: GraphicsProps) => {
   return <>Graphics</>;
 };
 

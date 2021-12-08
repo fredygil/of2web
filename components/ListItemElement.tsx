@@ -2,7 +2,7 @@ import React from "react";
 
 export type ListItemElementProps = {};
 
-const ListItemElement: React.FC = (props: ListItemElementProps) => {
+const ListItemElement = (props: ListItemElementProps) => {
   return <>ListItemElement</>;
 };
 

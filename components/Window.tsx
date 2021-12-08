@@ -2,7 +2,7 @@ import * as React from "react";
 
 export type WindowProps = {};
 
-const Window: React.FC = (props: WindowProps) => {
+const Window = (props: WindowProps) => {
   return <>Window</>;
 };
 

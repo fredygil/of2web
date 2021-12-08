@@ -2,7 +2,7 @@ import * as React from "react";
 
 type RelationProps = {};
 
-const Relation: React.FC = (props: RelationProps) => {
+const Relation = (props: RelationProps) => {
   return <>Relation</>;
 };
 

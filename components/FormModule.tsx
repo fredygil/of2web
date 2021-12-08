@@ -2,7 +2,7 @@ import * as React from "react";
 
 export type FormModuleProps = {};
 
-const FormModule: React.FC = (props: FormModuleProps) => {
+const FormModule = (props: FormModuleProps) => {
   return <>FormModule</>;
 };
 

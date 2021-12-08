@@ -2,7 +2,7 @@ import * as React from "react";
 
 type DataSourceColumnProps = {};
 
-const DataSourceColumn: React.FC = (props: DataSourceColumnProps) => {
+const DataSourceColumn = (props: DataSourceColumnProps) => {
   return <>DataSourceColumn</>;
 };
 

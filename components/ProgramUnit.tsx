@@ -2,7 +2,7 @@ import * as React from "react";
 
 type ProgramUnitProps = {};
 
-const ProgramUnit: React.FC = (props: ProgramUnitProps) => {
+const ProgramUnit = (props: ProgramUnitProps) => {
   return <>ProgramUnit</>;
 };
 

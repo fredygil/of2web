@@ -2,7 +2,7 @@ import * as React from "react";
 
 type RecordGroupColumnProps = {};
 
-const RecordGroupColumn: React.FC = (props: RecordGroupColumnProps) => {
+const RecordGroupColumn = (props: RecordGroupColumnProps) => {
   return <>RecordGroupColumn</>;
 };
 

@@ -2,7 +2,7 @@ import * as React from "react";
 
 export type LOVProps = {};
 
-const LOV: React.FC = (props: LOVProps) => {
+const LOV = (props: LOVProps) => {
   return <>LOV</>;
 };
 

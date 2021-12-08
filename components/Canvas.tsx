@@ -2,7 +2,7 @@ import * as React from "react";
 
 type CanvasProps = {};
 
-const Canvas: React.FC = (props: CanvasProps) => {
+const Canvas = (props: CanvasProps) => {
   return <>Canvas</>;
 };
 

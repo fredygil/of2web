@@ -2,7 +2,7 @@ import * as React from "react";
 
 export type ItemProps = {};
 
-const Item: React.FC = (props: ItemProps) => {
+const Item = (props: ItemProps) => {
   return <>Item</>;
 };
 

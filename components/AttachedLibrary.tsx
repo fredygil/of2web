@@ -2,7 +2,7 @@ import * as React from "react";
 
 type AttachedLibraryProps = {};
 
-const AttachedLibrary: React.FC = (props: AttachedLibraryProps) => {
+const AttachedLibrary = (props: AttachedLibraryProps) => {
   return <>AttachedLibrary</>;
 };
 

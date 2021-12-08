@@ -2,7 +2,7 @@ import * as React from "react";
 
 export type BlockProps = {};
 
-const Block: React.FC = (props: BlockProps) => {
+const Block = (props: BlockProps) => {
   return <>Block</>;
 };
 
