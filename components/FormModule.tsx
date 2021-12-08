@@ -8,8 +8,8 @@ export type FormModuleProps = {
   MenuModule: string;
   ConsoleWindow: string;
   Comment: string;
-  InteractionMode: "Non-Blocking" | "Blocking";
-  FirstNavigationBlockName: string;
+  InteractionMode?: "Non-Blocking" | "Blocking";
+  FirstNavigationBlockName?: string;
 };
 
 const FormModule: React.FC<FormModuleProps> = (props) => {

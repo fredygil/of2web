@@ -9,7 +9,7 @@ type AlertProps = {
   Title?: string;
   AlertMessage?: string;
   DefaultAlertButton?: "Button 1" | "Button 2";
-  AlertStyle: "Note" | "Stop" | "Caution";
+  AlertStyle?: "Note" | "Stop" | "Caution";
   BackColor?: string;
 };
 

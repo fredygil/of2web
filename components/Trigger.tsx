@@ -1,8 +1,13 @@
 import * as React from "react";
+import * as Types from "../types";
 
-export type TriggerProps = {};
+export type TriggerProps = {
+  Name: Types.TriggerName;
+  TriggerText: string;
+  DirtyInfo?: Types.TrueFalse;
+};
 
-const Trigger = (props: TriggerProps) => {
+const Trigger: React.FC<TriggerProps> = (props) => {
   return <>Trigger</>;
 };
 

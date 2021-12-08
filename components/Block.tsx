@@ -16,7 +16,7 @@ export type BlockProps = {
   WhereClause?: string;
   NavigationStyle?: "Change Record" | "Same Record" | "Change Data Block";
   ScrollbarWidth?: string;
-  QueryDataSourceName: string;
+  QueryDataSourceName?: string;
   OrderByClause?: string;
   EnforcedPrimaryKey?: Types.TrueFalse;
   ScrollbarLength?: string;

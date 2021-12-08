@@ -1,8 +1,18 @@
 import * as React from "react";
+import * as Types from "../types";
 
-type DataSourceColumnProps = {};
+type DataSourceColumnProps = {
+  Type: "Query";
+  DSCType: Types.DataSourceType;
+  DSCName: string;
+  DSCNochildren: Types.TrueFalse;
+  DSCLength: string;
+  DSCMandatory: Types.TrueFalse;
+  DSCPrecision: string;
+  DSCScale: string;
+};
 
-const DataSourceColumn = (props: DataSourceColumnProps) => {
+const DataSourceColumn: React.FC<DataSourceColumnProps> = (props) => {
   return <>DataSourceColumn</>;
 };
 
