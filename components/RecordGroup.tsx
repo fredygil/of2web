@@ -1,8 +1,16 @@
 import * as React from "react";
+import * as Types from "../types";
 
-type RecordGroupProps = {};
+type RecordGroupProps = {
+  Name: string;
+  DirtyInfo: Types.TrueFalse;
+  RecordGroupQuery: string;
+  RecordGroupFetchSize: string;
+  RecordGroupType?: "Query";
+  ColumnDataType?: Types.DataType;
+};
 
-const RecordGroup = (props: RecordGroupProps) => {
+const RecordGroup: React.FC<RecordGroupProps> = (props) => {
   return <>RecordGroup</>;
 };
 

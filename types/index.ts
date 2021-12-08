@@ -1,7 +1,7 @@
 export type TrueFalse = "true" | "false";
 
 export type DataType = "Integer" | "Money" | "Date" | "Number" |
-    "Long" | "Char" | "Datetime";
+    "Long" | "Char" | "Datetime" | "Character";
 
 export type DataSourceType = "NUMBER" | "CHAR" | "VARCHAR2" | "LONG" |
     "DATE" | "MLSLABEL" | "LONG RAW" | "BLOB";
@@ -10,9 +10,11 @@ export type Justification = "Left" | "Right" | "End" | "Center" | "Start";
 
 export type Alignment = "Bottom" | "Start" | "End" | "Top" | "Center";
 
-export type FontWeight = "Demilight" | "Extrabold" | "Bold" | "Medium";
+export type FontWeight = "Demilight" | "Extrabold" | "Bold" | "Medium" | "Ultralight";
 
 export type FontStyle = "Italic" | "Underline" | "Plain";
+
+export type FontSpacing = "Normal";
 
 export type TriggerName =
     "WHEN-MOUSE-CLICK" | "WHEN-BUTTON-PRESSED" | "WHEN-RADIO-CHANGED" |
@@ -30,7 +32,7 @@ export type TriggerName =
     "KEY-PRVREC" | "POST-UPDATE" | "KEY-NEXT-ITEM" | "ON-MESSAGE" |
     "WHEN-NEW-ITEM-INSTANCE" | "WHEN-CREATE-RECORD" | "POST-DELETE" |
     "WHEN-NEW-RECORD-INSTANCE" | "ON-POPULATE-DETAILS" | "KEY-PREV-ITEM" |
-    "KEY-NXTREC" | "ON-DELETE" | "KEY-NXTBLK" | "WHEN-VALIDATE-ITEM";
+    "KEY-NXTREC" | "ON-DELETE" | "KEY-NXTBLK" | "WHEN-VALIDATE-ITEM" | "PRE-FORM" | "ON-CLEAR-DETAILS";
 
 export type BevelType = "None" | "Raised" | "Inset" | "Outset" | "Lowered" | "Plain";
 
