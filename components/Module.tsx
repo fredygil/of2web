@@ -5,7 +5,7 @@ export type ModuleProps = {
   xmlns: string;
 };
 
-const Module = (props: ModuleProps) => {
+const Module: React.FC<ModuleProps> = (props) => {
   return <>Module</>;
 };
 
