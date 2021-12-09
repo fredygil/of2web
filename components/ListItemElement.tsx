@@ -1,8 +1,12 @@
 import React from "react";
 
-export type ListItemElementProps = {};
+export type ListItemElementProps = {
+  Name: string;
+  Index: string;
+  Value: string;
+};
 
-const ListItemElement = (props: ListItemElementProps) => {
+const ListItemElement: React.FC<ListItemElementProps> = (props) => {
   return <>ListItemElement</>;
 };
 

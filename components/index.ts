@@ -12,10 +12,14 @@ import LOV from "./LOV";
 import LOVColumnMapping from "./LOVColumnMapping";
 import Module from "./Module";
 import ModuleParameter from "./ModuleParameter";
+import ObjectGroup from "./ObjectGroup";
+import ObjectGroupChild from './ObjectGroupChild';
 import ProgramUnit from "./ProgramUnit";
 import Relation from "./Relation";
 import RecordGroup from "./RecordGroup";
 import RecordGroupColumn from "./RecordGroupColumn";
+import Report from "./Report";
+import TabPage from "./TabPage";
 import Trigger from "./Trigger";
 import VisualAttribute from "./VisualAttribute";
 import Window from "./Window";
@@ -35,10 +39,14 @@ export {
   LOVColumnMapping,
   Module,
   ModuleParameter,
+  ObjectGroup,
+  ObjectGroupChild,
   ProgramUnit,
   Relation,
   RecordGroup,
   RecordGroupColumn,
+  Report,
+  TabPage,
   Trigger,
   VisualAttribute,
   Window,

@@ -1,6 +1,10 @@
 import * as React from "react";
 
-type AttachedLibraryProps = {};
+type AttachedLibraryProps = {
+  Name: string;
+  LibrarySource: "File";
+  LibraryLocation: string;
+};
 
 const AttachedLibrary = (props: AttachedLibraryProps) => {
   return <>AttachedLibrary</>;
