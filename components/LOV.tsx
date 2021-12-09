@@ -15,8 +15,8 @@ export type LOVProps = {
   AutoSkip?: Types.TrueFalse;
   AutoSelect?: Types.TrueFalse;
   AutoDisplay?: Types.TrueFalse;
-  YPosition?: Types.TrueFalse;
-  XPosition?: Types.TrueFalse;
+  YPosition?: string;
+  XPosition?: string;
   VisualAttributeName?: string;
 };
 

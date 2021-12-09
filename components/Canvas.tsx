@@ -15,6 +15,10 @@ type CanvasProps = {
   ViewportXPositionOnCanvas?: string;
   ViewportYPositionOnCanvas?: string;
   Bevel?: Types.BevelType;
+  RaiseOnEnter?: Types.TrueFalse;
+  BackColor?: string;
+  ForegroundColor?: string;
+  DisplayViewport?: Types.TrueFalse;
 };
 
 const Canvas: React.FC<CanvasProps> = (props) => {

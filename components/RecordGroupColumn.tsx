@@ -5,7 +5,7 @@ type RecordGroupColumnProps = {
   Name: string;
   DirtyInfo: Types.TrueFalse;
   ColumnDataType: Types.DataType;
-  DataLengthSemantics: "BYTE" | "Null";
+  DataLengthSemantics?: "BYTE" | "Null";
   MaximumLength: string;
 };
 

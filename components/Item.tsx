@@ -91,7 +91,8 @@ export type ItemProps = {
   PromptAlign?: Types.Alignment;
   CopyValueFromItem?: string;
   SummaryFunction?: "Count" | "Sum" | "None";
-  CalculateMode?: "Formula" | "smmary" | "None";
+  SummaryItemName?: string;
+  CalculateMode?: "Formula" | "Summary" | "None";
   SummaryBlockName?: string;
   MouseNavigate?: Types.TrueFalse;
   ImplementationClass?: string;

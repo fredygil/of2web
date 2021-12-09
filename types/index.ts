@@ -32,7 +32,8 @@ export type TriggerName =
     "KEY-PRVREC" | "POST-UPDATE" | "KEY-NEXT-ITEM" | "ON-MESSAGE" |
     "WHEN-NEW-ITEM-INSTANCE" | "WHEN-CREATE-RECORD" | "POST-DELETE" |
     "WHEN-NEW-RECORD-INSTANCE" | "ON-POPULATE-DETAILS" | "KEY-PREV-ITEM" |
-    "KEY-NXTREC" | "ON-DELETE" | "KEY-NXTBLK" | "WHEN-VALIDATE-ITEM" | "PRE-FORM" | "ON-CLEAR-DETAILS";
+    "KEY-NXTREC" | "ON-DELETE" | "KEY-NXTBLK" | "WHEN-VALIDATE-ITEM" | "PRE-FORM" |
+    "ON-CLEAR-DETAILS" | "WHEN-TIMER-EXPIRED";
 
 export type BevelType = "None" | "Raised" | "Inset" | "Outset" | "Lowered" | "Plain";
 

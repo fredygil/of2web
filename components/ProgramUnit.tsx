@@ -2,7 +2,7 @@ import * as React from "react";
 
 type ProgramUnitProps = {
   Name: string;
-  ProgramUnitType: "Package Spec" | "Function" | "Package Body" | "Procedure";
+  ProgramUnitType?: "Package Spec" | "Function" | "Package Body" | "Procedure";
   ProgramUnitText: string;
 };
 

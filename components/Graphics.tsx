@@ -61,6 +61,8 @@ type GraphicsProps = {
   LayoutStyle?: "Tabular";
   LayoutDataBlockName?: string;
   Shrinkwrap?: Types.TrueFalse;
+  JoinStyle?: "Mitre" | "Bevel";
+  DistanceBetweenRecords?: string;
 };
 
 const Graphics: React.FC<GraphicsProps> = (props) => {

@@ -7,7 +7,7 @@ export type FormModuleProps = {
   Title: string;
   MenuModule: string;
   ConsoleWindow: string;
-  Comment: string;
+  Comment?: string;
   InteractionMode?: "Non-Blocking" | "Blocking";
   FirstNavigationBlockName?: string;
 };

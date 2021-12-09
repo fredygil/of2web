@@ -20,7 +20,7 @@ export type BlockProps = {
   OrderByClause?: string;
   EnforcedPrimaryKey?: Types.TrueFalse;
   ScrollbarLength?: string;
-  LockMode?: "delayed";
+  LockMode?: "Delayed";
   RecordVisualAttributeGroupName?: string;
   ScrollbarTabPageName?: string;
   PrecompSummary?: Types.TrueFalse;
