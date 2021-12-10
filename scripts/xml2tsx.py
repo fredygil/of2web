@@ -60,7 +60,7 @@ def xml2tsx_file(source_dir, source_file, dest_dir, rename_regex):
     try:
         with open(os.path.normpath(source_dir + os.sep + source_file), 'r', encoding='utf-8') as fdIn:
             xml_content = fdIn.read()
-            xml_content = '\n'.join(xml_content.split('\n')[2:])
+            xml_content = '\n'.join(xml_content.split('\n')[2:-2])
             create_tsx_file(source_dir, source_file, dest_dir, xml_content, tags_list, rename_regex)
         return 1
     except:
