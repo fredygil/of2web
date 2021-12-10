@@ -16,6 +16,14 @@ export type FontStyle = "Italic" | "Underline" | "Plain";
 
 export type FontSpacing = "Normal";
 
+export type FontType = {
+    FontWeight?: FontWeight;
+    FontStyle?: FontStyle;
+    FontSpacing?: FontSpacing;
+    FontSize?: string;
+    FontName?: string;
+};
+
 export type TriggerName =
     "WHEN-MOUSE-CLICK" | "WHEN-BUTTON-PRESSED" | "WHEN-RADIO-CHANGED" |
     "KEY-NEXT-ITEM" | "WHEN-TREE-NODE-SELECTED" | "KEY-PREV-ITEM" |
@@ -34,7 +42,7 @@ export type TriggerName =
     "WHEN-NEW-RECORD-INSTANCE" | "ON-POPULATE-DETAILS" | "KEY-PREV-ITEM" |
     "KEY-NXTREC" | "ON-DELETE" | "KEY-NXTBLK" | "WHEN-VALIDATE-ITEM" | "PRE-FORM" |
     "ON-CLEAR-DETAILS" | "WHEN-TIMER-EXPIRED" | "POST-FORMS-COMMIT" |
-    "WHEN-WINDOW-CLOSED" | "ON-ERROR";
+    "WHEN-WINDOW-CLOSED" | "ON-ERROR" | "KEY-EXIT" | "WHEN_VALIDATE_ITEM";
 
 export type BevelType = "None" | "Raised" | "Inset" | "Outset" | "Lowered" | "Plain";
 

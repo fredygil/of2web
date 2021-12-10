@@ -9,6 +9,8 @@ export type ReportProps = {
   CommMode?: "Asynchronous";
   ExecuteMode?: "Runtime";
   ReportServer?: string;
+  QueryName?: string;
+  DataSourceBlock?: string;
 };
 
 const Report: React.FC<ReportProps> = (props) => {

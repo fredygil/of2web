@@ -16,6 +16,8 @@ export type FormModuleProps = {
   NewdeferReqEnf?: string;
   ValidationUnit?: string;
   HorizontalToolbarCanvas?: string;
+  Use3dControls?: Types.TrueFalse;
+  IsolationMode?: "Read Committed";
 };
 
 const FormModule: React.FC<FormModuleProps> = (props) => {

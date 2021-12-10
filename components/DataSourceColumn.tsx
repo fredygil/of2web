@@ -5,7 +5,7 @@ type DataSourceColumnProps = {
   Type: "Query";
   DSCType: Types.DataSourceType;
   DSCName: string;
-  DSCNochildren?: Types.TrueFalse;
+  DSCNochildren: Types.TrueFalse;
   DSCLength: string;
   DSCMandatory: Types.TrueFalse;
   DSCPrecision: string;

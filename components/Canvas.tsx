@@ -23,7 +23,7 @@ type CanvasProps = {
   ShowVerticalScrollbar?: Types.TrueFalse;
   VisualAttributeName?: string;
   Visible?: Types.TrueFalse;
-};
+} & Types.FontType;
 
 const Canvas: React.FC<CanvasProps> = (props) => {
   return <>Canvas</>;

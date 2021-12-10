@@ -65,7 +65,7 @@ type GraphicsProps = {
   FrameTitleAlign?: Types.Alignment;
   FrameTitle?: string;
   FrameTitleSpacing?: string;
-  LayoutStyle?: "Tabular";
+  LayoutStyle?: "Tabular" | "Form";
   LayoutDataBlockName?: string;
   Shrinkwrap?: Types.TrueFalse;
   JoinStyle?: "Mitre" | "Bevel";

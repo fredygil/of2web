@@ -4,6 +4,7 @@ import Block from "./Block";
 import Canvas from "./Canvas";
 import CompoundText from './CompoundText';
 import Coordinate from "./Coordinate";
+import DataSourceArgument from "./DataSourceArgument";
 import DataSourceColumn from "./DataSourceColumn";
 import FormModule from "./FormModule";
 import Graphics from "./Graphics";
@@ -11,6 +12,8 @@ import Item from "./Item";
 import ListItemElement from "./ListItemElement";
 import LOV from "./LOV";
 import LOVColumnMapping from "./LOVColumnMapping";
+import Menu from "./Menu";
+import MenuItem from "./MenuItem";
 import Module from "./Module";
 import ModuleParameter from "./ModuleParameter";
 import ObjectGroup from "./ObjectGroup";
@@ -35,6 +38,7 @@ export {
   Canvas,
   CompoundText,
   Coordinate,
+  DataSourceArgument,
   DataSourceColumn,
   FormModule,
   Graphics,
@@ -42,6 +46,8 @@ export {
   ListItemElement,
   LOV,
   LOVColumnMapping,
+  Menu,
+  MenuItem,
   Module,
   ModuleParameter,
   ObjectGroup,
