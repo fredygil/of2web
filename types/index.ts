@@ -6,11 +6,11 @@ export type DataType = "Integer" | "Money" | "Date" | "Number" |
 export type DataSourceType = "NUMBER" | "CHAR" | "VARCHAR2" | "LONG" |
     "DATE" | "MLSLABEL" | "LONG RAW" | "BLOB";
 
-export type Justification = "Left" | "Right" | "End" | "Center" | "Start";
+export type Alignment = "Bottom" | "Start" | "End" | "Top" | "Center" | "Left" | "Right";
 
-export type Alignment = "Bottom" | "Start" | "End" | "Top" | "Center";
+export type Justification = Alignment
 
-export type FontWeight = "Demilight" | "Extrabold" | "Bold" | "Medium" | "Ultralight";
+export type FontWeight = "Demilight" | "Extrabold" | "Bold" | "Medium" | "Ultralight" | "Demibold" | "Demilight";
 
 export type FontStyle = "Italic" | "Underline" | "Plain";
 
@@ -33,7 +33,8 @@ export type TriggerName =
     "WHEN-NEW-ITEM-INSTANCE" | "WHEN-CREATE-RECORD" | "POST-DELETE" |
     "WHEN-NEW-RECORD-INSTANCE" | "ON-POPULATE-DETAILS" | "KEY-PREV-ITEM" |
     "KEY-NXTREC" | "ON-DELETE" | "KEY-NXTBLK" | "WHEN-VALIDATE-ITEM" | "PRE-FORM" |
-    "ON-CLEAR-DETAILS" | "WHEN-TIMER-EXPIRED";
+    "ON-CLEAR-DETAILS" | "WHEN-TIMER-EXPIRED" | "POST-FORMS-COMMIT" |
+    "WHEN-WINDOW-CLOSED" | "ON-ERROR";
 
 export type BevelType = "None" | "Raised" | "Inset" | "Outset" | "Lowered" | "Plain";
 

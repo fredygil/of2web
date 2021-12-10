@@ -2,6 +2,7 @@ import Alert from "./Alert";
 import AttachedLibrary from "./AttachedLibrary";
 import Block from "./Block";
 import Canvas from "./Canvas";
+import CompoundText from './CompoundText';
 import Coordinate from "./Coordinate";
 import DataSourceColumn from "./DataSourceColumn";
 import FormModule from "./FormModule";
@@ -15,11 +16,14 @@ import ModuleParameter from "./ModuleParameter";
 import ObjectGroup from "./ObjectGroup";
 import ObjectGroupChild from './ObjectGroupChild';
 import ProgramUnit from "./ProgramUnit";
+import PropertyClass from "./PropertyClass";
+import RadioButton from "./RadioButton";
 import Relation from "./Relation";
 import RecordGroup from "./RecordGroup";
 import RecordGroupColumn from "./RecordGroupColumn";
 import Report from "./Report";
 import TabPage from "./TabPage";
+import TextSegment from "./TextSegment";
 import Trigger from "./Trigger";
 import VisualAttribute from "./VisualAttribute";
 import Window from "./Window";
@@ -29,6 +33,7 @@ export {
   AttachedLibrary,
   Block,
   Canvas,
+  CompoundText,
   Coordinate,
   DataSourceColumn,
   FormModule,
@@ -42,11 +47,14 @@ export {
   ObjectGroup,
   ObjectGroupChild,
   ProgramUnit,
+  PropertyClass,
+  RadioButton,
   Relation,
   RecordGroup,
   RecordGroupColumn,
   Report,
   TabPage,
+  TextSegment,
   Trigger,
   VisualAttribute,
   Window,

@@ -6,7 +6,14 @@ type GraphicsProps = {
   DirtyInfo?: Types.TrueFalse;
   ScrollbarWidth?: string;
   VerticalMargin?: string;
-  GraphicsType?: "Frame" | "Rectangle" | "Line" | "Group" | "Text";
+  GraphicsType?:
+    | "Frame"
+    | "Rectangle"
+    | "Line"
+    | "Group"
+    | "Text"
+    | "Image"
+    | "Rounded Rectangle";
   HorizontalMargin?: string;
   HorizontalObjectOffset?: string;
   GraphicsFontColorCode?: string;
@@ -52,7 +59,7 @@ type GraphicsProps = {
   ShowScrollbar?: Types.TrueFalse;
   FrameTitleFontSize?: string;
   FrameTitleFontName?: string;
-  UpdateLayout?: "Manually";
+  UpdateLayout?: "Manually" | "Automatically" | "Locked";
   FrameTitleForegroundColor?: string;
   FrameTitleOffset?: string;
   FrameTitleAlign?: Types.Alignment;
@@ -63,6 +70,13 @@ type GraphicsProps = {
   Shrinkwrap?: Types.TrueFalse;
   JoinStyle?: "Mitre" | "Bevel";
   DistanceBetweenRecords?: string;
+  ImageFilename?: string;
+  ClipWidth?: string;
+  ClipHeight?: string;
+  CornerRadiusY?: string;
+  CornerRadiusX?: string;
+  StartPromptAlign?: Types.Alignment;
+  SingleObjectAlign?: Types.Alignment;
 };
 
 const Graphics: React.FC<GraphicsProps> = (props) => {

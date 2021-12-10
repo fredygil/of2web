@@ -9,7 +9,7 @@ export type CoordinateProps = {
   RealUnit: "Point" | "Pixel";
 };
 
-const Coordinate = (props: CoordinateProps) => {
+const Coordinate: React.FC<CoordinateProps> = (props) => {
   return <>Coordinate</>;
 };
 

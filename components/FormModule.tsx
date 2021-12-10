@@ -10,6 +10,12 @@ export type FormModuleProps = {
   Comment?: string;
   InteractionMode?: "Non-Blocking" | "Blocking";
   FirstNavigationBlockName?: string;
+  RuntimeComp?: string;
+  RecordVisualAttributeGroupName?: string;
+  InitializeMenu?: string;
+  NewdeferReqEnf?: string;
+  ValidationUnit?: string;
+  HorizontalToolbarCanvas?: string;
 };
 
 const FormModule: React.FC<FormModuleProps> = (props) => {

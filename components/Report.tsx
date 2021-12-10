@@ -5,6 +5,10 @@ export type ReportProps = {
   Name: string;
   Filename?: string;
   DirtyInfo?: Types.TrueFalse;
+  ReportDestinationType?: "Screen" | "Cache";
+  CommMode?: "Asynchronous";
+  ExecuteMode?: "Runtime";
+  ReportServer?: string;
 };
 
 const Report: React.FC<ReportProps> = (props) => {

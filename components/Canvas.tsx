@@ -19,6 +19,10 @@ type CanvasProps = {
   BackColor?: string;
   ForegroundColor?: string;
   DisplayViewport?: Types.TrueFalse;
+  ShowHorizontalScrollbar?: Types.TrueFalse;
+  ShowVerticalScrollbar?: Types.TrueFalse;
+  VisualAttributeName?: string;
+  Visible?: Types.TrueFalse;
 };
 
 const Canvas: React.FC<CanvasProps> = (props) => {

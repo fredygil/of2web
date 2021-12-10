@@ -3,7 +3,7 @@ import * as Types from "../types";
 
 type RecordGroupProps = {
   Name: string;
-  DirtyInfo: Types.TrueFalse;
+  DirtyInfo?: Types.TrueFalse;
   RecordGroupQuery: string;
   RecordGroupFetchSize: string;
   RecordGroupType?: "Query";

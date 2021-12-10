@@ -5,10 +5,10 @@ type RelationProps = {
   Name: string;
   DeleteRecord: "Cascading" | "Isolated" | "Non Isolated";
   Deferred: Types.TrueFalse;
-  DirtyInfo: Types.TrueFalse;
+  DirtyInfo?: Types.TrueFalse;
   JoinCondition: string;
   DetailBlock: string;
-  RelationType: string;
+  RelationType?: string;
   AutoQuery: Types.TrueFalse;
   PreventMasterlessOperations: Types.TrueFalse;
 };
