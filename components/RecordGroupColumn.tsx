@@ -3,7 +3,7 @@ import * as Types from "../types/index";
 
 type RecordGroupColumnProps = {
   Name: string;
-  DirtyInfo: Types.TrueFalse;
+  DirtyInfo?: Types.TrueFalse;
   ColumnDataType: Types.DataType;
   DataLengthSemantics?: "BYTE" | "Null";
   MaximumLength: string;

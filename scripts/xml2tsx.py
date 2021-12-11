@@ -50,7 +50,9 @@ def xml2tsx_file(source_dir, source_file, dest_dir, rename_regex):
     try:
         tree = ET.parse(os.path.normpath(source_dir + os.sep + source_file))
         for elem in tree.iter():
-            tags_list.append(re.sub(r'^\{.+\}(\w+)$', r'\1', elem.tag))
+            tag = re.sub(r'^\{.+\}(\w+)$', r'\1', elem.tag)
+            if tag != 'Module':
+                tags_list.append(re.sub(r'^\{.+\}(\w+)$', r'\1', elem.tag))
         tags_list = list(set(tags_list))
         tags_list.sort()
     except:

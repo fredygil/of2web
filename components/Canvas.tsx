@@ -19,7 +19,14 @@ type CanvasProps = {
   BackColor?: string;
   ForegroundColor?: string;
   DisplayViewport?: Types.TrueFalse;
-};
+  ShowHorizontalScrollbar?: Types.TrueFalse;
+  ShowVerticalScrollbar?: Types.TrueFalse;
+  VisualAttributeName?: string;
+  Visible?: Types.TrueFalse;
+  TabAttachmentEdge?: Types.Alignment;
+  TabStyle?: "Rounded" | "Chamfered";
+  TabActionStyle?: string;
+} & Types.FontType;
 
 const Canvas: React.FC<CanvasProps> = (props) => {
   return <>Canvas</>;

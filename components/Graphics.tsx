@@ -6,7 +6,14 @@ type GraphicsProps = {
   DirtyInfo?: Types.TrueFalse;
   ScrollbarWidth?: string;
   VerticalMargin?: string;
-  GraphicsType?: "Frame" | "Rectangle" | "Line" | "Group" | "Text";
+  GraphicsType?:
+    | "Frame"
+    | "Rectangle"
+    | "Line"
+    | "Group"
+    | "Text"
+    | "Image"
+    | "Rounded Rectangle";
   HorizontalMargin?: string;
   HorizontalObjectOffset?: string;
   GraphicsFontColorCode?: string;
@@ -41,7 +48,7 @@ type GraphicsProps = {
   LineSpacing?: "Single";
   CustomSpacing?: string;
   CapStyle?: "Butt";
-  DashStyle?: "Solid";
+  DashStyle?: "Solid" | "Dashed";
   EdgeForegroundColor?: string;
   LanguageDirection?: "Default";
   ArrowStyle?: "None";
@@ -52,17 +59,25 @@ type GraphicsProps = {
   ShowScrollbar?: Types.TrueFalse;
   FrameTitleFontSize?: string;
   FrameTitleFontName?: string;
-  UpdateLayout?: "Manually";
+  UpdateLayout?: "Manually" | "Automatically" | "Locked";
   FrameTitleForegroundColor?: string;
   FrameTitleOffset?: string;
   FrameTitleAlign?: Types.Alignment;
   FrameTitle?: string;
   FrameTitleSpacing?: string;
-  LayoutStyle?: "Tabular";
+  LayoutStyle?: "Tabular" | "Form";
   LayoutDataBlockName?: string;
   Shrinkwrap?: Types.TrueFalse;
-  JoinStyle?: "Mitre" | "Bevel";
+  JoinStyle?: "Mitre" | "Bevel" | "Round";
   DistanceBetweenRecords?: string;
+  ImageFilename?: string;
+  ClipWidth?: string;
+  ClipHeight?: string;
+  CornerRadiusY?: string;
+  CornerRadiusX?: string;
+  StartPromptAlign?: Types.Alignment;
+  SingleObjectAlign?: Types.Alignment;
+  Dither?: Types.TrueFalse;
 };
 
 const Graphics: React.FC<GraphicsProps> = (props) => {

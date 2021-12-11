@@ -5,6 +5,7 @@ export type TabPageProps = {
   Name: string;
   Label?: string;
   DirtyInfo?: Types.TrueFalse;
+  Visible?: Types.TrueFalse;
 };
 
 const TabPage: React.FC<TabPageProps> = (props) => {

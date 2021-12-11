@@ -19,23 +19,6 @@ export type ListItemElementType = {
   Value: string;
 };
 
-export type RadioButtonType = {
-  Name: string;
-  BackColor: string;
-  YPosition: string;
-  Label: string;
-  XPosition: string;
-  DirtyInfo: Types.TrueFalse;
-  Width: string;
-  Height: string;
-  RadioButtonValue: string;
-  Prompt: string;
-  PromptAttachmentOffset: string;
-  PromptAlignOffset: string;
-  Visible: Types.TrueFalse;
-  ForegroundColor: string;
-};
-
 export type ItemProps = {
   Name: string;
   MaximumLength?: string;
@@ -118,7 +101,6 @@ export type ItemProps = {
   ImageFormat?: "BMP" | "JFIF";
   SizingStyle?: "Adjust" | "Crop";
   DisplayQuality?: "High";
-  RadioButton?: RadioButtonType;
   ConcealData?: Types.TrueFalse;
   RecordVisualAttributeGroupName?: string;
   EditYPosition?: string;
