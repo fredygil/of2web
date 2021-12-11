@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useStoreActions } from "../client/store";
 import * as Types from "../types";
 
 export type FormModuleProps = {
@@ -22,7 +23,15 @@ export type FormModuleProps = {
 };
 
 const FormModule: React.FC<FormModuleProps> = (props) => {
-  return <>FormModule</>;
+  const { useEffect } = React;
+  const { setFormConfig } = useStoreActions((actions) => actions.form);
+
+  useEffect(() => {
+    const { children, ...config } = props;
+    setFormConfig(config);
+  }, []);
+
+  return <>{props.children}</>;
 };
 
 export default FormModule;

@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useStoreActions } from "../client/store";
 import * as Types from "../types/index";
 
 export type ModuleParameterProps = {
@@ -10,6 +11,12 @@ export type ModuleParameterProps = {
 };
 
 const ModuleParameter: React.FC<ModuleParameterProps> = (props) => {
+  const { addParameter } = useStoreActions((actions) => actions.form);
+
+  React.useEffect(() => {
+    addParameter(props);
+  }, []);
+
   return <>ModuleParameter</>;
 };
 
