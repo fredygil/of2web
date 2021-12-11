@@ -24,6 +24,8 @@ type CanvasProps = {
   VisualAttributeName?: string;
   Visible?: Types.TrueFalse;
   TabAttachmentEdge?: Types.Alignment;
+  TabStyle?: "Rounded" | "Chamfered";
+  TabActionStyle?: string;
 } & Types.FontType;
 
 const Canvas: React.FC<CanvasProps> = (props) => {

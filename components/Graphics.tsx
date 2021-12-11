@@ -48,7 +48,7 @@ type GraphicsProps = {
   LineSpacing?: "Single";
   CustomSpacing?: string;
   CapStyle?: "Butt";
-  DashStyle?: "Solid";
+  DashStyle?: "Solid" | "Dashed";
   EdgeForegroundColor?: string;
   LanguageDirection?: "Default";
   ArrowStyle?: "None";

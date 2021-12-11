@@ -42,7 +42,8 @@ export type TriggerName =
     "WHEN-NEW-RECORD-INSTANCE" | "ON-POPULATE-DETAILS" | "KEY-PREV-ITEM" |
     "KEY-NXTREC" | "ON-DELETE" | "KEY-NXTBLK" | "WHEN-VALIDATE-ITEM" | "PRE-FORM" |
     "ON-CLEAR-DETAILS" | "WHEN-TIMER-EXPIRED" | "POST-FORMS-COMMIT" |
-    "WHEN-WINDOW-CLOSED" | "ON-ERROR" | "KEY-EXIT" | "WHEN_VALIDATE_ITEM" | "POST-FORM";
+    "WHEN-WINDOW-CLOSED" | "ON-ERROR" | "KEY-EXIT" | "WHEN_VALIDATE_ITEM" |
+    "POST-FORM" | "WHEN-TAB-PAGE-CHANGED";
 
 export type BevelType = "None" | "Raised" | "Inset" | "Outset" | "Lowered" | "Plain";
 
