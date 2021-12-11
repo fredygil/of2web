@@ -1,7 +1,8 @@
 import * as React from "react";
+import { useStoreActions } from "../client/store";
 import * as Types from "../types";
 
-type CanvasProps = {
+export type CanvasProps = {
   Name: string;
   ViewportHeight?: string;
   ViewportWidth?: string;
@@ -29,6 +30,12 @@ type CanvasProps = {
 } & Types.FontType;
 
 const Canvas: React.FC<CanvasProps> = (props) => {
+  const { addCanvas } = useStoreActions((actions) => actions.form);
+
+  React.useEffect(() => {
+    addCanvas(props);
+  }, []);
+
   return <>Canvas</>;
 };
 
