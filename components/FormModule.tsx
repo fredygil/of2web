@@ -18,6 +18,7 @@ export type FormModuleProps = {
   HorizontalToolbarCanvas?: string;
   Use3dControls?: Types.TrueFalse;
   IsolationMode?: "Read Committed";
+  MaximumRecordsFetched?: string;
 };
 
 const FormModule: React.FC<FormModuleProps> = (props) => {

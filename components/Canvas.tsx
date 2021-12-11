@@ -23,6 +23,7 @@ type CanvasProps = {
   ShowVerticalScrollbar?: Types.TrueFalse;
   VisualAttributeName?: string;
   Visible?: Types.TrueFalse;
+  TabAttachmentEdge?: Types.Alignment;
 } & Types.FontType;
 
 const Canvas: React.FC<CanvasProps> = (props) => {

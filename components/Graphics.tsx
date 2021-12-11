@@ -68,7 +68,7 @@ type GraphicsProps = {
   LayoutStyle?: "Tabular" | "Form";
   LayoutDataBlockName?: string;
   Shrinkwrap?: Types.TrueFalse;
-  JoinStyle?: "Mitre" | "Bevel";
+  JoinStyle?: "Mitre" | "Bevel" | "Round";
   DistanceBetweenRecords?: string;
   ImageFilename?: string;
   ClipWidth?: string;
@@ -77,6 +77,7 @@ type GraphicsProps = {
   CornerRadiusX?: string;
   StartPromptAlign?: Types.Alignment;
   SingleObjectAlign?: Types.Alignment;
+  Dither?: Types.TrueFalse;
 };
 
 const Graphics: React.FC<GraphicsProps> = (props) => {

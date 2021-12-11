@@ -54,6 +54,7 @@ export type BlockProps = {
   PreviousNavigationBlockName?: string;
   InsertProcedureName?: string;
   DataSourceArgument?: DataSourceArgumentType;
+  KeyMode?: "Updateable";
 };
 
 const Block: React.FC<BlockProps> = (props: BlockProps) => {
