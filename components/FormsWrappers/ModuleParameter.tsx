@@ -1,6 +1,6 @@
 import * as React from "react";
-import { useStoreActions } from "../client/store";
-import * as Types from "../types/index";
+import { useStoreActions } from "../../client/store";
+import * as Types from "../../types/index";
 
 export type ModuleParameterProps = {
   Name: string;

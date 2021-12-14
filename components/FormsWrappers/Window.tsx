@@ -1,6 +1,6 @@
 import * as React from "react";
-import { useStoreActions } from "../client/store";
-import * as Types from "../types";
+import { useStoreActions } from "../../client/store";
+import * as Types from "../../types";
 
 export type WindowProps = {
   Name: string;
