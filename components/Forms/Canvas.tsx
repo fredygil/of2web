@@ -33,10 +33,31 @@ const Canvas: React.FC<CanvasProps> = (props) => {
   const { addCanvas } = useStoreActions((actions) => actions.form);
 
   React.useEffect(() => {
-    addCanvas(props);
+    const { children, ...canvasProps } = props;
+    addCanvas(canvasProps);
   }, []);
 
-  return <>Canvas</>;
+  const css = `
+      div {
+        border: 1px solid gray;
+        background-color: white;
+        width: ${props.Width}px;
+        height: ${props.Height}px;
+        transform: scale(1.41);
+      }
+    `;
+
+  if ((props?.Visible || "True") === "True") {
+    return (
+      <>
+        <div id="canvas" className="canvas">
+          <style jsx>{css}</style>
+        </div>
+      </>
+    );
+  }
+
+  return <></>;
 };
 
 export default Canvas;

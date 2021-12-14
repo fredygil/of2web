@@ -20,7 +20,7 @@ def create_tsx_file(source_dir, source_file, dest_dir, xml_content, tags_list, r
         f'import * as React from "react";\n'
         f'import {{\n'
         f'{components_import}\n'
-        f'}} from "../../../components";\n'
+        f'}} from "../../../components/Forms";\n'
         f'\n'
         f'const Form = () => {{\n'
         f'  return (\n'
