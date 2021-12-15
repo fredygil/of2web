@@ -7,7 +7,7 @@ export type MenuItemProps = {
 };
 
 const MenuItem: React.FC<MenuItemProps> = (props) => {
-  return <>MenuItem</>;
+  return <></>;
 };
 
 export default MenuItem;

@@ -37,25 +37,13 @@ const Canvas: React.FC<CanvasProps> = (props) => {
     addCanvas(canvasProps);
   }, []);
 
-  const css = `
-      div {
-        border: 1px solid gray;
-        background-color: white;
-        width: ${props.Width}px;
-        height: ${props.Height}px;
-        transform: scale(1.41);
-      }
-    `;
-
-  if ((props?.Visible || "True") === "True") {
-    return (
-      <>
-        <div id="canvas" className="canvas">
-          <style jsx>{css}</style>
-        </div>
-      </>
-    );
-  }
+  // if ((props?.Visible || "True") === "True") {
+  //   return (
+  //     <>
+  //       <div id={props.Name} className="canvas"></div>
+  //     </>
+  //   );
+  // }
 
   return <></>;
 };

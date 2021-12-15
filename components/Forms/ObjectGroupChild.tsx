@@ -8,7 +8,7 @@ type ObjectGroupChildProps = {
 };
 
 const ObjectGroupChild: React.FC<ObjectGroupChildProps> = (props) => {
-  return <>ObjectGroupChild</>;
+  return <></>;
 };
 
 export default ObjectGroupChild;

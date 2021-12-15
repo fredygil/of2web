@@ -58,7 +58,7 @@ export type BlockProps = {
 };
 
 const Block: React.FC<BlockProps> = (props: BlockProps) => {
-  return <>Block</>;
+  return <></>;
 };
 
 export default Block;

@@ -10,7 +10,7 @@ export type CoordinateProps = {
 };
 
 const Coordinate: React.FC<CoordinateProps> = (props) => {
-  return <>Coordinate</>;
+  return <></>;
 };
 
 export default Coordinate;

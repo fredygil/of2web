@@ -10,7 +10,7 @@ export type LOVColumnMappingProps = {
 };
 
 const LOVColumnMapping: React.FC<LOVColumnMappingProps> = (props) => {
-  return <>LOVColumnMapping</>;
+  return <></>;
 };
 
 export default LOVColumnMapping;

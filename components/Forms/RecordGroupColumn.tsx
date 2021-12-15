@@ -10,7 +10,7 @@ type RecordGroupColumnProps = {
 };
 
 const RecordGroupColumn: React.FC<RecordGroupColumnProps> = (props) => {
-  return <>RecordGroupColumn</>;
+  return <></>;
 };
 
 export default RecordGroupColumn;

@@ -9,7 +9,7 @@ type ObjectGroupProps = {
 };
 
 const ObjectGroup: React.FC<ObjectGroupProps> = (props) => {
-  return <>ObjectGroup</>;
+  return <></>;
 };
 
 export default ObjectGroup;

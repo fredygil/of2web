@@ -14,7 +14,7 @@ export type ReportProps = {
 };
 
 const Report: React.FC<ReportProps> = (props) => {
-  return <>Report</>;
+  return <></>;
 };
 
 export default Report;

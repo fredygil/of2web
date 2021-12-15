@@ -11,7 +11,7 @@ type DataSourceArgumentProps = {
 };
 
 const DataSourceArgument: React.FC<DataSourceArgumentProps> = (props) => {
-  return <>DataSourceArgument</>;
+  return <></>;
 };
 
 export default DataSourceArgument;

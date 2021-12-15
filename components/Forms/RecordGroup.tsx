@@ -11,7 +11,7 @@ type RecordGroupProps = {
 };
 
 const RecordGroup: React.FC<RecordGroupProps> = (props) => {
-  return <>RecordGroup</>;
+  return <></>;
 };
 
 export default RecordGroup;

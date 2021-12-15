@@ -31,7 +31,16 @@ const FormModule: React.FC<FormModuleProps> = (props) => {
     setFormConfig(config);
   }, []);
 
-  return <>{props.children}</>;
+  return (
+    <div>
+      {props.children}
+      <style jsx>{`
+        div {
+          /*transform: scale(1.41, 1.41);*/
+        }
+      `}</style>
+    </div>
+  );
 };
 
 export default FormModule;

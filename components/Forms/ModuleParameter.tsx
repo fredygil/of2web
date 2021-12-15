@@ -17,7 +17,7 @@ const ModuleParameter: React.FC<ModuleParameterProps> = (props) => {
     addParameter(props);
   }, []);
 
-  return <>ModuleParameter</>;
+  return <></>;
 };
 
 export default ModuleParameter;

@@ -24,7 +24,7 @@ export type RadioButtonProps = {
 };
 
 const RadioButton: React.FC<RadioButtonProps> = (props) => {
-  return <>RadioButton</>;
+  return <></>;
 };
 
 export default RadioButton;

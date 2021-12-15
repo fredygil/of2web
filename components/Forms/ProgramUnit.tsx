@@ -7,7 +7,7 @@ type ProgramUnitProps = {
 };
 
 const ProgramUnit = (props: ProgramUnitProps) => {
-  return <>ProgramUnit</>;
+  return <></>;
 };
 
 export default ProgramUnit;

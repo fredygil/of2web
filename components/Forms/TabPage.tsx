@@ -9,7 +9,7 @@ export type TabPageProps = {
 };
 
 const TabPage: React.FC<TabPageProps> = (props) => {
-  return <>TabPage</>;
+  return <></>;
 };
 
 export default TabPage;

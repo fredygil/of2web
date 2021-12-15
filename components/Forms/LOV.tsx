@@ -21,7 +21,7 @@ export type LOVProps = {
 };
 
 const LOV: React.FC<LOVProps> = (props) => {
-  return <>LOV</>;
+  return <></>;
 };
 
 export default LOV;

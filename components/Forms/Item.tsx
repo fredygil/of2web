@@ -141,7 +141,7 @@ export type ItemProps = {
 };
 
 const Item: React.FC<ItemProps> = (props: ItemProps) => {
-  return <>Item</>;
+  return <></>;
 };
 
 export default Item;

@@ -14,7 +14,7 @@ export type TextSegmentProps = {
 };
 
 const TextSegment: React.FC<TextSegmentProps> = (props: TextSegmentProps) => {
-  return <>TextSegment</>;
+  return <></>;
 };
 
 export default TextSegment;

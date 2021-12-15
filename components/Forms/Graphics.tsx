@@ -81,7 +81,7 @@ type GraphicsProps = {
 };
 
 const Graphics: React.FC<GraphicsProps> = (props) => {
-  return <>Graphics</>;
+  return <></>;
 };
 
 export default Graphics;

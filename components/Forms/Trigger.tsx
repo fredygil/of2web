@@ -10,7 +10,7 @@ export type TriggerProps = {
 };
 
 const Trigger: React.FC<TriggerProps> = (props) => {
-  return <>Trigger</>;
+  return <></>;
 };
 
 export default Trigger;

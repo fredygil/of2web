@@ -14,7 +14,7 @@ export type VisualAttributeProps = {
 };
 
 const VisualAttribute: React.FC<VisualAttributeProps> = (props) => {
-  return <>VisualAttribute</>;
+  return <></>;
 };
 
 export default VisualAttribute;

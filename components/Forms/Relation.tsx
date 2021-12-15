@@ -14,7 +14,7 @@ type RelationProps = {
 };
 
 const Relation: React.FC<RelationProps> = (props) => {
-  return <>Relation</>;
+  return <></>;
 };
 
 export default Relation;

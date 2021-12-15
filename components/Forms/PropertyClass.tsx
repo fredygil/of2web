@@ -19,7 +19,7 @@ type PropertyClassProps = {
 };
 
 const PropertyClass: React.FC<PropertyClassProps> = (props) => {
-  return <>PropertyClass</>;
+  return <></>;
 };
 
 export default PropertyClass;

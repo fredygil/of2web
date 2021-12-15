@@ -7,7 +7,7 @@ export type ListItemElementProps = {
 };
 
 const ListItemElement: React.FC<ListItemElementProps> = (props) => {
-  return <>ListItemElement</>;
+  return <></>;
 };
 
 export default ListItemElement;

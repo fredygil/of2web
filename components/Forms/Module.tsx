@@ -6,7 +6,7 @@ export type ModuleProps = {
 };
 
 const Module: React.FC<ModuleProps> = (props) => {
-  return <>Module</>;
+  return <></>;
 };
 
 export default Module;

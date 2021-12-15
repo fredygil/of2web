@@ -13,7 +13,7 @@ type DataSourceColumnProps = {
 };
 
 const DataSourceColumn: React.FC<DataSourceColumnProps> = (props) => {
-  return <>DataSourceColumn</>;
+  return <></>;
 };
 
 export default DataSourceColumn;

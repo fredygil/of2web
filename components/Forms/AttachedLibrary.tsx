@@ -7,7 +7,7 @@ type AttachedLibraryProps = {
 };
 
 const AttachedLibrary = (props: AttachedLibraryProps) => {
-  return <>AttachedLibrary</>;
+  return <></>;
 };
 
 export default AttachedLibrary;

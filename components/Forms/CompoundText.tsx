@@ -6,7 +6,7 @@ export type CompoundTextProps = {
 };
 
 const CompoundText: React.FC<CompoundTextProps> = (props) => {
-  return <>CompoundText</>;
+  return <></>;
 };
 
 export default CompoundText;
