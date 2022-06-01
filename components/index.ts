@@ -6,6 +6,7 @@ import CompoundText from './CompoundText';
 import Coordinate from "./Coordinate";
 import DataSourceArgument from "./DataSourceArgument";
 import DataSourceColumn from "./DataSourceColumn";
+import Editor from "./Editor";
 import FormModule from "./FormModule";
 import Graphics from "./Graphics";
 import Item from "./Item";
@@ -40,6 +41,7 @@ export {
   Coordinate,
   DataSourceArgument,
   DataSourceColumn,
+  Editor,
   FormModule,
   Graphics,
   Item,

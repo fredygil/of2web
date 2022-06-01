@@ -26,6 +26,7 @@ export interface CanvasProps extends Types.ComponentWithChildren, Types.FontType
   TabAttachmentEdge?: Types.Alignment;
   TabStyle?: "Rounded" | "Chamfered";
   TabActionStyle?: string;
+  TabWidthStyle?: string;
 };
 
 const Canvas: React.FC<CanvasProps> = (props) => {

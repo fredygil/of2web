@@ -1,10 +1,11 @@
 import * as React from "react";
 import * as Types from "../types";
 
-type GraphicsProps = {
+interface GraphicsProps extends Types.ComponentWithChildren {
   Name: string;
   DirtyInfo?: Types.TrueFalse;
   ScrollbarWidth?: string;
+  ScrollbarAlign?: Types.Alignment;
   VerticalMargin?: string;
   GraphicsType?:
     | "Frame"

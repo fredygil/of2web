@@ -115,7 +115,7 @@ export interface ItemProps extends Types.ComponentWithChildren {
   Rendered?: Types.TrueFalse;
   QueryAllowed?: Types.TrueFalse;
   VisualAttributeName?: string;
-  ListStyle?: "Tlist" | "Poplist";
+  ListStyle?: "Tlist" | "Poplist" | "Combo Box";
   QueryOnly?: Types.TrueFalse;
   LockRecord?: Types.TrueFalse;
   PopupMenuName?: string;
