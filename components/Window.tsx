@@ -1,5 +1,4 @@
 import * as React from "react";
-import { useStoreActions } from "../client/store";
 import * as Types from "../types";
 
 export type WindowProps = {
@@ -28,12 +27,6 @@ export type WindowProps = {
 };
 
 const Window: React.FC<WindowProps> = (props) => {
-  const { addWindow } = useStoreActions((actions) => actions.form);
-
-  React.useEffect(() => {
-    addWindow(props);
-  }, []);
-
   return <>Window</>;
 };
 
