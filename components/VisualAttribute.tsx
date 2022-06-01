@@ -11,6 +11,7 @@ export type VisualAttributeProps = {
   FontWeight?: Types.FontWeight;
   FontSize?: string;
   FontName?: string;
+  FontStyle?: Types.FontStyle;
 };
 
 const VisualAttribute: React.FC<VisualAttributeProps> = (props) => {

@@ -10,7 +10,7 @@ type DataSourceArgumentType = {
   DSAValue: string;
 };
 
-export type BlockProps = {
+export interface BlockProps extends Types.ComponentWithChildren {
   Name: string;
   DirtyInfo?: Types.TrueFalse;
   WhereClause?: string;
@@ -20,7 +20,7 @@ export type BlockProps = {
   OrderByClause?: string;
   EnforcedPrimaryKey?: Types.TrueFalse;
   ScrollbarLength?: string;
-  LockMode?: "Delayed";
+  LockMode?: "Automatic" | "Delayed";
   RecordVisualAttributeGroupName?: string;
   ScrollbarTabPageName?: string;
   PrecompSummary?: Types.TrueFalse;
@@ -55,6 +55,7 @@ export type BlockProps = {
   InsertProcedureName?: string;
   DataSourceArgument?: DataSourceArgumentType;
   KeyMode?: "Updateable";
+  DMLReturnValue?: Types.TrueFalse;
 };
 
 const Block: React.FC<BlockProps> = (props: BlockProps) => {

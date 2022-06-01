@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as Types from "../types";
 
-export type CompoundTextProps = {
+interface CompoundTextProps extends Types.ComponentWithChildren {
   Name: string;
 };
 

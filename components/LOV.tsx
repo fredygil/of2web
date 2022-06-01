@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as Types from "../types";
 
-export type LOVProps = {
+interface LOVProps extends Types.ComponentWithChildren {
   Name: string;
   DirtyInfo?: Types.TrueFalse;
   Width?: string;

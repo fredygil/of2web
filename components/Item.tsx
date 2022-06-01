@@ -19,7 +19,7 @@ export type ListItemElementType = {
   Value: string;
 };
 
-export type ItemProps = {
+export interface ItemProps extends Types.ComponentWithChildren {
   Name: string;
   MaximumLength?: string;
   UpdateAllowed?: Types.TrueFalse;
@@ -115,7 +115,7 @@ export type ItemProps = {
   Rendered?: Types.TrueFalse;
   QueryAllowed?: Types.TrueFalse;
   VisualAttributeName?: string;
-  ListStyle?: "Tlist" | "Poplist";
+  ListStyle?: "Tlist" | "Poplist" | "Combo Box";
   QueryOnly?: Types.TrueFalse;
   LockRecord?: Types.TrueFalse;
   PopupMenuName?: string;

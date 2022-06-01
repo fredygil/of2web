@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as Types from "../types";
 
-type ObjectGroupProps = {
+interface ObjectGroupProps extends Types.ComponentWithChildren {
   Name: string;
   DirtyInfo?: Types.TrueFalse;
   ObjectGroupType?: string;

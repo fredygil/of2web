@@ -1,3 +1,9 @@
+import React from "react";
+
+export interface ComponentWithChildren {
+    children?: React.ReactNode;
+};
+
 export type TrueFalse = "true" | "false";
 
 export type DataType = "Integer" | "Money" | "Date" | "Number" |
@@ -31,6 +37,7 @@ export type TriggerName =
     "WHEN-TREE-NODE-ACTIVATED" | "POST-TEXT-ITEM" | "PRE-TEXT-ITEM" |
     "WHEN-NEW-ITEM-INSTANCE" | "WHEN-CHECKBOX-CHANGED" | "WHEN-CUSTOM-ITEM-EVENT" |
     "KEY-NXTBLK" | "WHEN-VALIDATE-ITEM" | "KEY-CREREC" | "KEY-DELREC" |
+    "PRE-BLOCK" |
     "PRE-QUERY" | "POST-RECORD" | "PRE-UPDATE" | "WHEN-NEW-FORM-INSTANCE" |
     "ON-CHECK-DELETE-MASTER" | "KEY-UP" | "KEY-SCRDOWN" | "POST-INSERT" |
     "KEY-NXTSET" | "PRE-DELETE" | "KEY-LISTVAL" | "WHEN-NEW-BLOCK-INSTANCE" |

@@ -1,9 +1,10 @@
 import * as React from "react";
+import * as Types from "../types";
 
-export type MenuItemProps = {
+interface MenuItemProps extends Types.ComponentWithChildren {
   Name: string;
   Label: string;
-  MenuItemCode: string;
+  MenuItemCode?: string;
 };
 
 const MenuItem: React.FC<MenuItemProps> = (props) => {
