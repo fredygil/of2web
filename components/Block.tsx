@@ -10,7 +10,7 @@ type DataSourceArgumentType = {
   DSAValue: string;
 };
 
-export type BlockProps = {
+export interface BlockProps extends Types.ComponentWithChildren {
   Name: string;
   DirtyInfo?: Types.TrueFalse;
   WhereClause?: string;

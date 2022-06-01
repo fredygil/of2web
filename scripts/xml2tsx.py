@@ -15,11 +15,11 @@ from collections import OrderedDict
 import xml.etree.ElementTree as ET
 
 def create_tsx_file(source_dir, source_file, dest_dir, xml_content, tags_list, rename_regex):
-    components_import = ',\n'.join(tags_list)
+    components_import = ',\n\t'.join(tags_list)
     tsx_content = (
         f'import * as React from "react";\n'
         f'import {{\n'
-        f'{components_import}\n'
+        f'\t{components_import}\n'
         f'}} from "../../../components";\n'
         f'\n'
         f'const Form = () => {{\n'
@@ -59,15 +59,15 @@ def xml2tsx_file(source_dir, source_file, dest_dir, rename_regex):
         print("Error parsing file %s in %s " % (source_file, source_dir))
         return 0 
 
-    try:
-        with open(os.path.normpath(source_dir + os.sep + source_file), 'r', encoding='utf-8') as fdIn:
-            xml_content = fdIn.read()
-            xml_content = '\n'.join(xml_content.split('\n')[2:-2])
-            create_tsx_file(source_dir, source_file, dest_dir, xml_content, tags_list, rename_regex)
-        return 1
-    except:
-        print("Error opening file %s in %s " % (source_file, source_dir))
-        return 0   
+    # try:
+    with open(os.path.normpath(source_dir + os.sep + source_file), 'r', encoding='utf-8') as fdIn:
+        xml_content = fdIn.read()
+        xml_content = '\n'.join(xml_content.split('\n')[2:-2])
+        create_tsx_file(source_dir, source_file, dest_dir, xml_content, tags_list, rename_regex)
+    return 1
+    # except:
+    #     print("Error opening file %s " % (os.path.normpath(source_dir + os.sep + source_file)))
+    #     return 0   
 
         
 def xml2tsx(source_dir, dest_dir, rename_regex):
@@ -85,7 +85,7 @@ def xml2tsx(source_dir, dest_dir, rename_regex):
         if os.path.isfile(os.path.normpath(source_dir + os.sep + source_file)) and extension == 'xml':
             count += xml2tsx_file(source_dir, source_file, dest_dir, rename_regex)
         elif os.path.isdir(source_dir + os.sep + source_file):
-            count += xml2tsx(source_dir + os.sep + source_file, dest_dir)
+            count += xml2tsx(source_dir + os.sep + source_file, dest_dir, rename_regex)
     return count
     
    

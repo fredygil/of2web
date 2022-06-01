@@ -1,3 +1,9 @@
+import React from "react";
+
+export interface ComponentWithChildren {
+    children?: React.ReactNode;
+};
+
 export type TrueFalse = "true" | "false";
 
 export type DataType = "Integer" | "Money" | "Date" | "Number" |

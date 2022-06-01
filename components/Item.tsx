@@ -19,7 +19,7 @@ export type ListItemElementType = {
   Value: string;
 };
 
-export type ItemProps = {
+export interface ItemProps extends Types.ComponentWithChildren {
   Name: string;
   MaximumLength?: string;
   UpdateAllowed?: Types.TrueFalse;

@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as Types from "../types";
 
-type RecordGroupProps = {
+interface RecordGroupProps extends Types.ComponentWithChildren {
   Name: string;
   DirtyInfo?: Types.TrueFalse;
   RecordGroupQuery: string;
