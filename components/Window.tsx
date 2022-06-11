@@ -1,5 +1,6 @@
 import * as React from "react";
 import * as Types from "../types";
+import { Card } from "antd";
 
 export type WindowProps = {
   Name: string;
@@ -27,7 +28,7 @@ export type WindowProps = {
 };
 
 const Window: React.FC<WindowProps> = (props) => {
-  return <>Window</>;
+  return <Card size="small" title={props.Title} style={{ width: 300 }}></Card>;
 };
 
 export default Window;
