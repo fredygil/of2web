@@ -1,5 +1,5 @@
 import * as React from "react";
-import * as Types from "../types";
+import * as Types from "../common/types";
 
 interface GraphicsProps extends Types.ComponentWithChildren {
   Name: string;
@@ -79,7 +79,7 @@ interface GraphicsProps extends Types.ComponentWithChildren {
   StartPromptAlign?: Types.Alignment;
   SingleObjectAlign?: Types.Alignment;
   Dither?: Types.TrueFalse;
-};
+}
 
 const Graphics: React.FC<GraphicsProps> = (props) => {
   return <>Graphics</>;

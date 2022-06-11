@@ -1,7 +1,9 @@
 import * as React from "react";
-import * as Types from "../types";
+import * as Types from "../common/types";
 
-export interface CanvasProps extends Types.ComponentWithChildren, Types.FontType {
+export interface CanvasProps
+  extends Types.ComponentWithChildren,
+    Types.FontType {
   Name: string;
   ViewportHeight?: string;
   ViewportWidth?: string;
@@ -27,7 +29,7 @@ export interface CanvasProps extends Types.ComponentWithChildren, Types.FontType
   TabStyle?: "Rounded" | "Chamfered";
   TabActionStyle?: string;
   TabWidthStyle?: string;
-};
+}
 
 const Canvas: React.FC<CanvasProps> = (props) => {
   return <>Canvas</>;

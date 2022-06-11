@@ -1,5 +1,5 @@
 import * as React from "react";
-import * as Types from "../types";
+import * as Types from "../common/types";
 
 export type TextSegmentProps = {
   Name: string;

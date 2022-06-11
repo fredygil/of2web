@@ -1,5 +1,5 @@
 import * as React from "react";
-import * as Types from "../types/index";
+import * as Types from "../common/types";
 
 type RecordGroupColumnProps = {
   Name: string;

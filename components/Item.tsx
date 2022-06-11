@@ -1,5 +1,5 @@
 import * as React from "react";
-import * as Types from "../types";
+import * as Types from "../common/types";
 
 export type ItemType =
   | "OLE Container (Obsolete)"
@@ -138,7 +138,7 @@ export interface ItemProps extends Types.ComponentWithChildren {
   HelpBookTopic?: string;
   PromptReadingOrder?: "Default";
   ImageDepth?: "Original";
-};
+}
 
 const Item: React.FC<ItemProps> = (props: ItemProps) => {
   return <>Item</>;
