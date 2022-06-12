@@ -2,6 +2,8 @@ import * as React from "react";
 import * as Types from "../common/types";
 import { Card } from "antd";
 import { blue } from "@ant-design/colors";
+import { grey } from "@ant-design/colors";
+import { scaled } from "../common/utils";
 
 export type WindowProps = {
   Name: string;
@@ -38,20 +40,20 @@ const Window: React.FC<WindowProps> = (props) => {
     lineHeight: "1rem",
   };
 
-  const bodyStyle = { width: "100%", height: "100%" };
+  const bodyStyle = { width: "100%", height: "100%", backgroundColor: grey[5] };
 
   return (
     <>
       <div id={props.Name} className="window">
         <style jsx>{`
           div#${props.Name} {
-            width: ${props.Width}px;
-            height: ${props.Height}px;
+            width: ${scaled(props.Width ?? "0")}px;
+            height: ${scaled(props.Height ?? "0")}px;
             border: 1px solid black;
           }
         `}</style>
         <Card title={props.Title} bodyStyle={bodyStyle} headStyle={headStyle}>
-          This is a card This is another card. Lorem ipsumnex
+          Render canvas here
         </Card>
       </div>
     </>
