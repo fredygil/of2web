@@ -1,5 +1,5 @@
 import * as React from "react";
-import * as Types from "../types";
+import * as Types from "../common/types";
 
 export interface TabPageProps extends Types.ComponentWithChildren {
   Name: string;
@@ -7,7 +7,7 @@ export interface TabPageProps extends Types.ComponentWithChildren {
   DirtyInfo?: Types.TrueFalse;
   Visible?: Types.TrueFalse;
   Enabled?: Types.TrueFalse;
-};
+}
 
 const TabPage: React.FC<TabPageProps> = (props) => {
   return <>TabPage</>;

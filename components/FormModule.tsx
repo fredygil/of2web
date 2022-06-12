@@ -1,5 +1,5 @@
 import * as React from "react";
-import * as Types from "../types";
+import * as Types from "../common/types";
 
 export type FormModuleProps = {
   children?: React.ReactNode;
@@ -23,7 +23,6 @@ export type FormModuleProps = {
 };
 
 const FormModule: React.FC<FormModuleProps> = (props) => {
-
   return <>{props.children}</>;
 };
 

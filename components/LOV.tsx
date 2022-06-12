@@ -1,5 +1,5 @@
 import * as React from "react";
-import * as Types from "../types";
+import * as Types from "../common/types";
 
 interface LOVProps extends Types.ComponentWithChildren {
   Name: string;
@@ -18,7 +18,7 @@ interface LOVProps extends Types.ComponentWithChildren {
   YPosition?: string;
   XPosition?: string;
   VisualAttributeName?: string;
-};
+}
 
 const LOV: React.FC<LOVProps> = (props) => {
   return <>LOV</>;

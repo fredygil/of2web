@@ -1,5 +1,5 @@
 import * as React from "react";
-import * as Types from "../types";
+import * as Types from "../common/types";
 
 type DataSourceArgumentType = {
   Type: "Query";
@@ -56,7 +56,7 @@ export interface BlockProps extends Types.ComponentWithChildren {
   DataSourceArgument?: DataSourceArgumentType;
   KeyMode?: "Updateable";
   DMLReturnValue?: Types.TrueFalse;
-};
+}
 
 const Block: React.FC<BlockProps> = (props: BlockProps) => {
   return <>Block</>;

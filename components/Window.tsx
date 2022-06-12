@@ -1,6 +1,7 @@
 import * as React from "react";
-import * as Types from "../types";
+import * as Types from "../common/types";
 import { Card } from "antd";
+import { blue } from "@ant-design/colors";
 
 export type WindowProps = {
   Name: string;
@@ -28,7 +29,33 @@ export type WindowProps = {
 };
 
 const Window: React.FC<WindowProps> = (props) => {
-  return <Card size="small" title={props.Title} style={{ width: 300 }}></Card>;
+  const headStyle = {
+    backgroundColor: blue.primary,
+    color: "white",
+    margin: 0,
+    padding: 0,
+    paddingLeft: "10px",
+    lineHeight: "1rem",
+  };
+
+  const bodyStyle = { width: "100%", height: "100%" };
+
+  return (
+    <>
+      <div id={props.Name} className="window">
+        <style jsx>{`
+          div#${props.Name} {
+            width: ${props.Width}px;
+            height: ${props.Height}px;
+            border: 1px solid black;
+          }
+        `}</style>
+        <Card title={props.Title} bodyStyle={bodyStyle} headStyle={headStyle}>
+          This is a card This is another card. Lorem ipsumnex
+        </Card>
+      </div>
+    </>
+  );
 };
 
 export default Window;

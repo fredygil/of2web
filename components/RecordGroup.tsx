@@ -1,5 +1,5 @@
 import * as React from "react";
-import * as Types from "../types";
+import * as Types from "../common/types";
 
 interface RecordGroupProps extends Types.ComponentWithChildren {
   Name: string;
@@ -8,7 +8,7 @@ interface RecordGroupProps extends Types.ComponentWithChildren {
   RecordGroupFetchSize: string;
   RecordGroupType?: "Query";
   ColumnDataType?: Types.DataType;
-};
+}
 
 const RecordGroup: React.FC<RecordGroupProps> = (props) => {
   return <>RecordGroup</>;

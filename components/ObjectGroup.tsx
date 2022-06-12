@@ -1,12 +1,12 @@
 import * as React from "react";
-import * as Types from "../types";
+import * as Types from "../common/types";
 
 interface ObjectGroupProps extends Types.ComponentWithChildren {
   Name: string;
   DirtyInfo?: Types.TrueFalse;
   ObjectGroupType?: string;
   Comment?: string;
-};
+}
 
 const ObjectGroup: React.FC<ObjectGroupProps> = (props) => {
   return <>ObjectGroup</>;
