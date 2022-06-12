@@ -1,5 +1,6 @@
 import { SIZE_SCALE } from './const';
 
+
 export function scaled(size: string): string;
 export function scaled(size: number): number;
 export function scaled(size: undefined): undefined;

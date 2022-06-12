@@ -14,11 +14,14 @@
     "easy-peasy": "^5.0.4",
     "next": "12.1.6",
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-dom": "18.1.0",
+    "recoil": "^0.7.3",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "@types/node": "17.0.36",
     "@types/react": "18.0.9",
+    "@types/uuid": "^8.3.4",
     "eslint": "8.16.0",
     "eslint-config-next": "12.1.6",
     "sass": "^1.52.3",
